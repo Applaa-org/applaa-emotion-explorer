@@ -1,0 +1,27 @@
+{
+  "game": {
+    "name": "Feelings Detective",
+    "type": "2D",
+    "genre": "educational",
+    "description": "An interactive story game where children identify emotions to build empathy."
+  },
+  "settings": {
+    "window": {"width": 800, "height": 600},
+    "theme": "soft_pastel"
+  },
+  "player": {
+    "name": "Detective",
+    "abilities": ["read_emotions"]
+  },
+  "logic": {
+    "winCondition": "complete_all_scenarios",
+    "scoring": {
+      "pointsPerCorrectAnswer": 100
+    },
+    "persistence": {
+      "saveHighScore": true,
+      "savePlayerName": true,
+      "saveProgress": true
+    }
+  }
+}
