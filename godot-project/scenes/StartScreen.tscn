@@ -30,7 +30,7 @@ offset_bottom = 200.0
 
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-text = "Feelings Detective"
+text = "Emotion Explorer"
 horizontal_alignment = 1
 
 [node name="HighScoreLabel" type="Label" parent="VBoxContainer"]
@@ -49,11 +49,11 @@ autowrap_mode = 3
 
 [node name="PlayerNameInput" type="LineEdit" parent="VBoxContainer"]
 layout_mode = 2
-placeholder_text = "Enter your name, Detective..."
+placeholder_text = "Enter your name, Explorer..."
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "Start Investigation"
+text = "Start Exploration"
 
 [node name="CloseButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2

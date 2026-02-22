@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feelings Detective</title>
+    <title>Emotion Explorer</title>
     <style>
         body {
             margin: 0;
@@ -136,11 +136,11 @@
 <div id="game-container">
     <!-- Start Screen -->
     <div id="start-screen" class="screen">
-        <h1>Feelings Detective</h1>
+        <h1>Emotion Explorer</h1>
         <div class="stats" id="start-high-score">High Score: 0</div>
         <p>Help characters understand their emotions!</p>
-        <input type="text" id="player-name" placeholder="Your Name, Detective">
-        <button class="btn" onclick="startGame()">Start Investigation</button>
+        <input type="text" id="player-name" placeholder="Your Name, Explorer">
+        <button class="btn" onclick="startGame()">Start Exploration</button>
         <button class="btn btn-close" onclick="closeGame()">Close Game</button>
     </div>
 
@@ -157,7 +157,7 @@
 
     <!-- Victory Screen -->
     <div id="victory-screen" class="screen hidden">
-        <h1>Case Closed!</h1>
+        <h1>Mission Complete!</h1>
         <div class="badge" id="badge-display">Badge</div>
         <div class="stats" id="final-score">Your Score: 0</div>
         <div class="stats" id="victory-high-score">High Score: 0</div>
@@ -169,10 +169,10 @@
 
 <script>
     // Game State
-    const gameId = 'feelings-detective';
+    const gameId = 'emotion-explorer';
     let empathyScore = 0;
     let currentQuestionIndex = 0;
-    let playerName = 'Detective';
+    let playerName = 'Explorer';
     let highScore = 0;
 
     const questions = [
@@ -335,7 +335,7 @@
         
         document.getElementById('final-score').textContent = `Your Score: ${empathyScore}`;
         
-        let badge = "🔍 Novice Detective";
+        let badge = "🔍 Novice Explorer";
         if (empathyScore >= 500) badge = "🏆 Master of Feelings";
         else if (empathyScore >= 300) badge = "🌟 Empathy Expert";
         
@@ -363,7 +363,7 @@
     function closeGame() {
         // In a real web context, this might close the window or navigate away
         // For the preview, we just show a message
-        alert("Thanks for playing, Detective!");
+        alert("Thanks for playing, Explorer!");
     }
 </script>
 

@@ -2,10 +2,10 @@ extends Node
 
 # Game State
 var empathy_score: int = 0
-var player_name: String = "Detective"
+var player_name: String = "Explorer"
 var current_question_index: int = 0
 var high_score: int = 0
-var game_id: String = "feelings-detective"
+var game_id: String = "emotion-explorer"
 
 # Questions Database
 var questions: Array = [
@@ -49,7 +49,7 @@ func get_badge() -> String:
 	elif percentage >= 60:
 		return "🌟 Empathy Expert"
 	else:
-		return "🔍 Novice Detective"
+		return "🔍 Novice Explorer"
 
 # Save score to localStorage via Applaa API
 func save_score_to_storage():
@@ -77,8 +77,6 @@ func load_game_data():
 	""" % game_id)
 
 # This function is called by the JavaScript bridge when data is loaded
-# Note: In a real export, you'd need a JS bridge to call this GDScript function.
-# For this implementation, we assume the UI updates via the message listener in the HTML wrapper.
 func on_data_loaded(data: Dictionary):
 	if data.has("highScore"):
 		high_score = data.highScore

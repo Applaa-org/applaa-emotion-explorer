@@ -1,6 +1,6 @@
 {
   "game": {
-    "name": "Feelings Detective",
+    "name": "Emotion Explorer",
     "type": "2D",
     "genre": "educational",
     "description": "An interactive story game where children identify emotions to build empathy."
@@ -10,7 +10,7 @@
     "theme": "soft_pastel"
   },
   "player": {
-    "name": "Detective",
+    "name": "Explorer",
     "abilities": ["read_emotions"]
   },
   "logic": {

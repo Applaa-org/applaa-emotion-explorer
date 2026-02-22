@@ -30,7 +30,7 @@ offset_bottom = 200.0
 
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-text = "Case Closed!"
+text = "Mission Complete!"
 horizontal_alignment = 1
 
 [node name="BadgeLabel" type="Label" parent="VBoxContainer"]
